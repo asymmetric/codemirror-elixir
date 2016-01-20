@@ -6,7 +6,7 @@
   "description": "",
   "main": "elixir-simple.js",
   "moduleType": [],
-  "license": "MIT",
+  "license": "GPLv3",
   "homepage": "",
   "private": true,
   "dependencies": {
