@@ -44,6 +44,7 @@ CodeMirror.defineSimpleMode("elixir", {
   // specific to simple modes.
   meta: {
     dontIndentStates: ["comment"],
-    lineComment: "#"
+    lineComment: "#",
+    electricInput: /^\s*end$/
   }
 });
