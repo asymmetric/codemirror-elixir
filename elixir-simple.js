@@ -4,7 +4,7 @@ CodeMirror.defineSimpleMode("elixir", {
     // The regex matches the token, the token property contains the type
     // {regex: /"(?:[^\\]|\\.)*?"/, token: "string"},
     {regex: /".*"/, token: "string"},
-    {regex: /'.*'/, token: "charlist"},
+    {regex: /'.*'/, token: "string-2"},
     // You can match multiple tokens at once. Note that the captured
     // groups must span the whole string in this case
     {regex: /(def(?:p)?)(\s)([\w]*)/,
