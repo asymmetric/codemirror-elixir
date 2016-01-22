@@ -7,11 +7,11 @@ CodeMirror.defineSimpleMode("elixir", {
     {regex: /'.*'/, token: "string-2"},
     // You can match multiple tokens at once. Note that the captured
     // groups must span the whole string in this case
-    {regex: /(def(?:p)?)(\s)([\w]*)/,
+    {regex: /(def(?:p|module)?)(\s)([\w]*)/,
      token: ["keyword", null, "variable-2"]},
     // Rules are matched in the order in which they appear, so there is
     // no ambiguity between this one and the one above
-    {regex: /(?:def|defp|case|when|cond|for|if|unless|try|receive|send|exit|raise|throw|after|rescue|catch|else|quote|unquote|super|spawn|spawn_link|spawn_monitor|fn|module|import|require)\b/,
+    {regex: /(?:def|defp|defmodule|case|when|cond|for|if|unless|try|receive|send|exit|raise|throw|after|rescue|catch|else|quote|unquote|super|spawn|spawn_link|spawn_monitor|fn|import|require)\b/,
      token: "keyword"},
     {regex: /true|false|nil/, token: "boolean"},
     {regex: /:(?:[a-z])+(?:\w)*/, token: "atom"},
