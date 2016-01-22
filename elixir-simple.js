@@ -15,7 +15,7 @@ CodeMirror.defineSimpleMode("elixir", {
      token: "keyword"},
     {regex: /true|false|nil/, token: "boolean"},
     {regex: /:(?:[a-z])+(?:\w)*/, token: "atom"},
-    {regex: /0x[a-f\d]+|[-+]?(?:\.\d+|\d+\.?\d*)(?:e[-+]?\d+)?/i,
+    {regex: /0x[a-f\d]+|[-+]?(?:0o)?(?:\.\d+|\d+\.?\d*)(?:e[-+]?\d+)?/i,
      token: "number"},
     {regex: /#.*/, token: "comment"},
     {regex: /\/(?:[^\\]|\\.)*?\//, token: "variable-3"},
