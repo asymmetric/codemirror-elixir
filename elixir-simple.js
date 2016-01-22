@@ -26,6 +26,8 @@ CodeMirror.defineSimpleMode("elixir", {
     {regex: /[\{\[\(]|%{|do|->/, indent: true},
     {regex: /[\}\]\)]|end/, dedent: true},
     {regex: /[a-z][\w]*/, token: "variable"},
+    // underscored variables
+    {regex: /_\w*/, token: "comment"},
     // You can embed other modes with the mode property. This rule
     // causes all code between << and >> to be highlighted with the XML
     // mode.
