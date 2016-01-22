@@ -11,7 +11,7 @@ CodeMirror.defineSimpleMode("elixir", {
      token: ["keyword", null, "variable-2"]},
     // Rules are matched in the order in which they appear, so there is
     // no ambiguity between this one and the one above
-    {regex: /(?:def|defp|end|case|when|cond|for|if|unless|try|receive|send|exit|raise|throw|after|rescue|catch|else|quote|unquote|super|spawn|spawn_link|spawn_monitor|fn|module|import|require)\b/,
+    {regex: /(?:def|defp|case|when|cond|for|if|unless|try|receive|send|exit|raise|throw|after|rescue|catch|else|quote|unquote|super|spawn|spawn_link|spawn_monitor|fn|module|import|require)\b/,
      token: "keyword"},
     {regex: /true|false|nil/, token: "boolean"},
     {regex: /:(?:[a-z])+(?:\w)*/, token: "atom"},
