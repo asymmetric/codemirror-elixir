@@ -13,6 +13,7 @@ CodeMirror.defineSimpleMode("elixir", {
     // no ambiguity between this one and the one above
     {regex: /(?:def|defp|defmodule|defmacro|defmacrop|case|when|cond|for|if|unless|try|receive|send|exit|raise|throw|after|rescue|catch|else|quote|unquote|super|spawn|spawn_link|spawn_monitor|fn|import|require)\b/,
      token: "keyword"},
+    {regex: /[A-Z][a-z]*/, token: "qualifier"},
     {regex: /true|false|nil/, token: "builtin"},
     {regex: /:(?:"[\w\s]*"|'[\w\s]*'|\w*)/, token: "atom"},
     {regex: /0x[a-f\d]+|[-+]?(?:0o)?(?:\.\d+|\d+\.?\d*)(?:e[-+]?\d+)?/i,
