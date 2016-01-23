@@ -21,10 +21,10 @@ CodeMirror.defineSimpleMode("elixir", {
     {regex: /\/(?:[^\\]|\\.)*?\//, token: "variable-3"},
     // A next property will cause the mode to move to a different state
     // {regex: /\/\*/, token: "comment", next: "comment"},
-    {regex: /[-+\/*=<>!]+/, token: "operator"},
     // indent and dedent properties guide autoindentation
     {regex: /(?:{|\[|\(|%{|do|->)/, indent: true},
     {regex: /[\}\]\)]|end/, dedent: true},
+    {regex: /[-+\/*=<>!]+/, token: "operator"},
     {regex: /[a-z][\w]*/, token: "variable"},
     // underscored variables
     {regex: /_\w*/, token: "comment"},
