@@ -24,7 +24,7 @@ CodeMirror.defineSimpleMode("elixir", {
     // indent and dedent properties guide autoindentation
     {regex: /(?:{|\[|\(|%{|do|->)/, indent: true},
     {regex: /[\}\]\)]|end/, dedent: true},
-    {regex: /[-+\/*=<>!]+/, token: "operator"},
+    {regex: /[-+*=<>!]+/, token: "operator"},
     {regex: /[a-z][\w]*/, token: "variable"},
     // underscored variables
     {regex: /_\w*/, token: "comment"},
